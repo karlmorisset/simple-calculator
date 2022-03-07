@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // let firstValue = parseInt(prompt('Saisir un premier nombre'))
+        // let operator = prompt('Saisir l\'opération à réaliser')
+        // let secondValue = parseInt(prompt('Saisir un second nombre'))
+
+        // console.log(calculate(firstValue, operator, secondValue))
+
+        // function calculate(value1, operator, value2) {
+        //     if (operator == "+") return firstValue + secondValue
+        //     if (operator == "-") return firstValue - secondValue
+        //     if (operator == "*") return firstValue * secondValue
+        //     if (operator == "/") return firstValue / secondValue
+
+        //     return "Opérateur invalide"
+        // }
+
+        let name = prompt('Quel est votre nom ?')
+
+        const random = Math.floor(Math.random() * 100) + 1;
+
+        let number = 0
+        do {
+            number = parseInt(prompt('Donnez un nombre ?'))
+            if (number > random) console.log(number + ", c'est moins");
+            if (number < random) console.log(number + ", c'est plus");
+        } while (number != random)
+
+        console.log("Bravo " + name + ", vous avez gagné !")
+        console.log("Le bon numéro était " + random)
+    </script>
+</head>
+<body>
+
+</body>
+</html>
